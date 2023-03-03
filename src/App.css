@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App-header {
+  background-color: #acbaca;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* color: white; */
+}
+
+.scoreTile {
+  position: relative;
+  width: 500px;
+  height: 150px;
+  background-color: #c9d5e0;
+  display: flex;
+  top:  -30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
+  inset 15px 15px 10px rgba(255, 255, 255, 0.75 ), 
+  -15px -15px 35px rgba(255, 255, 255, 0.55),
+  inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tile {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #c9d5e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
+  inset 15px 15px 10px rgba(255, 255, 255, 0.75 ), 
+  -15px -15px 35px rgba(255, 255, 255, 0.55),
+  inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.smallTile1 {
+  display: grid;
+  position: absolute;
+  background-color: #152b4a;
+  width: 110px;
+  height: 110px;
+  left: 30px;
+  top: 30px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #152b4a66,
+  inset 5px 5px 5px rgba(255, 255, 255, 0.75),
+  -6px -6px 10px rgba(255, 255, 255, 1);
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c9d5e0;
+}
+
+.smallTile2 {
+  display: grid;
+  position: absolute;
+  background-color: #152b4a;
+  width: 110px;
+  height: 110px;
+  left: 150px;
+  top: 30px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #152b4a66,
+  inset 5px 5px 5px rgba(231, 231, 231, 0.75),
+  -6px -6px 10px rgba(255, 255, 255, 1);
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c9d5e0;
+}
+
+.smallTile3 {
+  display: grid;
+  position: absolute;
+  background-color: #152b4a;
+  width: 110px;
+  height: 110px;
+  left: 270px;
+  top: 30px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #152b4a66,
+  inset 5px 5px 5px rgba(229, 227, 227, 0.75),
+  -6px -6px 10px rgba(255, 255, 255, 1);
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c9d5e0;
+}
+
+.smallTile4 {
+  display: grid;
+  position: absolute;
+  background-color: #152b4a;
+  width: 110px;
+  height: 110px;
+  left: 30px;
+  top: 150px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #152b4a66,
+  inset 5px 5px 5px rgba(255, 255, 255, 0.75),
+  -6px -6px 10px rgba(255, 255, 255, 1);
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c9d5e0;
+}
+
+.smallTile5 {
+  display: grid;
+  position: absolute;
+  background-color: #152b4a;
+  width: 110px;
+  height: 110px;
+  left: 150px;
+  top: 150px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #152b4a66,
+  inset 5px 5px 5px rgba(231, 231, 231, 0.75),
+  -6px -6px 10px rgba(255, 255, 255, 1);
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c9d5e0;
+}
+
+.smallTile6 {
+  display: grid;
+  position: absolute;
+  background-color: #152b4a;
+  width: 110px;
+  height: 110px;
+  left: 270px;
+  top: 150px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #152b4a66,
+  inset 5px 5px 5px rgba(229, 227, 227, 0.75),
+  -6px -6px 10px rgba(255, 255, 255, 1);
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c9d5e0;
+}
+
+.smallTile7 {
+  display: grid;
+  position: absolute;
+  background-color: #152b4a;
+  width: 110px;
+  height: 110px;
+  left: 30px;
+  top: 270px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #152b4a66,
+  inset 5px 5px 5px rgba(255, 255, 255, 0.75),
+  -6px -6px 10px rgba(255, 255, 255, 1);
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c9d5e0;
+}
+
+.smallTile8 {
+  display: grid;
+  position: absolute;
+  background-color: #152b4a;
+  width: 110px;
+  height: 110px;
+  left: 150px;
+  top: 270px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #152b4a66,
+  inset 5px 5px 5px rgba(231, 231, 231, 0.75),
+  -6px -6px 10px rgba(255, 255, 255, 1);
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c9d5e0;
+}
+
+.smallTile9 {
+  display: grid;
+  position: absolute;
+  background-color: #152b4a;
+  width: 110px;
+  height: 110px;
+  left: 270px;
+  top: 270px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #152b4a66,
+  inset 5px 5px 5px rgba(229, 227, 227, 0.75),
+  -6px -6px 10px rgba(255, 255, 255, 1);
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c9d5e0;
+}

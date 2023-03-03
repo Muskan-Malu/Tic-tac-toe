@@ -1,0 +1,96 @@
+.scoreBoardLeft {
+    display: grid;
+    position: absolute;
+    background-color: #152b4a;
+    width: 210px;
+    height: 110px;
+    left: 30px;
+    top: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #152b4a66,
+    inset 5px 5px 5px rgba(255, 255, 255, 0.75),
+    -6px -6px 10px rgba(255, 255, 255, 1);
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c9d5e0;
+}
+
+.scoreBoardRight {
+    display: grid;
+    position: absolute;
+    background-color: #152b4a;
+    width: 210px;
+    height: 110px;
+    left: 260px;
+    top: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #152b4a66,
+    inset 5px 5px 5px rgba(255, 255, 255, 0.75),
+    -6px -6px 10px rgba(255, 255, 255, 1);
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c9d5e0;
+}
+
+.scoreBoardLeftActive {
+    display: grid;
+    position: absolute;
+    background-color: #152b4a;
+    width: 210px;
+    height: 110px;
+    left: 30px;
+    top: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #152b4a66,
+    inset 5px 5px 5px rgba(255, 255, 255, 0.75),
+    -6px -6px 10px rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c9d5e0;
+}
+
+.scoreBoardLeftActive::before {
+    content: '';
+    position: absolute;
+    inset: 15px;
+    background: linear-gradient(#2196f3, #e91e63);
+    border-radius: 25px;
+}
+
+.scoreBoardRightActive {
+    display: grid;
+    position: absolute;
+    background-color: #152b4a;
+    width: 210px;
+    height: 110px;
+    left: 260px;
+    top: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #152b4a66,
+    inset 5px 5px 5px rgba(255, 255, 255, 0.75),
+    -6px -6px 10px rgba(255, 255, 255, 1);
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c9d5e0;
+}
+
+.scoreBoardRightActive::before {
+    content: '';
+    position: absolute;
+    inset: 15px;
+    background: linear-gradient(#2196f3, #e91e63);
+    border-radius: 25px;
+}
+
+.nameHolder {
+    display: grid;
+    position: relative;
+    background-color: #152b4a;
+    width: 170px;
+    height: 70px;
+    left: 20px;
+    top: 20px;
+    border-radius: 20px;
+    font-size: large;
+    align-items: center;
+}

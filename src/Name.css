@@ -1,0 +1,122 @@
+.nameTile {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: #c9d5e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
+    inset 15px 15px 10px rgba(255, 255, 255, 0.75 ), 
+    -15px -15px 35px rgba(255, 255, 255, 0.55),
+    inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nameTile1 {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #152b4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px #152b4a66,
+    inset 5px 5px 5px rgba(255, 255, 255, 0.75),
+    -6px -6px 10px rgba(255, 255, 255, 1);
+}
+
+.nameForm {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: #c9d5e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.playerForm {
+    display: flex;
+}
+
+.label {
+    position: relative;
+    display: block;
+    font-size: larger;
+}
+
+.textArea {
+    font-size: 16px;
+    width: 170px;
+    background-color: #c9d5e0;
+    border: none;
+    border-bottom: 2px solid #152b4a;
+    padding: 10px;
+    outline: none;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    left: 30px;
+    bottom: 40px;
+}
+
+.ButtonTile {
+    position: relative;
+    top: 80px;
+    right: 240px;
+}
+
+button {
+    outline: none;
+    border: none;
+    color: #c9d5e0;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: #152b4a;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 2px 2px 10px #152b4a66,
+    inset 2px 2px 2px rgba(255, 255, 255, 0.5),
+    -3px -3px 10px rgba(255, 255, 255, 0.7);
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    background: linear-gradient(#2196f3, #e91e63);
+    border-radius: 30px;
+    animation: animate 2s linear infinite;
+}
+
+.smallCircle {
+    display: grid;
+    position: relative;
+    background-color: #152b4a;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: large;
+    align-items: center;
+}
+
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
