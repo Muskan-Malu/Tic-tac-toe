@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Square from './squares';
 import Score from './scoreBoard';
 import Name from './Name';
+import Winner from './Winner';
 
 function App() {
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -12,6 +13,7 @@ function App() {
   const [name2, setName2] = useState('');
   const [name, setName] = useState(true);
   const [game, setGame] = useState(false);
+  const [finalWinner, setFinalWinner] = useState("");
   const [isActive1, setIsActive1] = useState("Active");
   const [isActive2, setIsActive2] = useState("");
   const [score1, setScore1] = useState(0);
@@ -37,7 +39,7 @@ function App() {
     winner();
   }
 
-  const arr = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
+  const arr = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
   
   const winner = () => {
     arr.map(ele => {
@@ -47,10 +49,18 @@ function App() {
           setScore1(score1 + 1);
           setSquares(Array(9).fill(null));
           setWin(false);
+          if(score1 === 2) {
+            setGame(false);
+            setFinalWinner(name1);
+          }
         } else {
           setScore2(score2 + 1);
           setSquares(Array(9).fill(null));
           setWin(false);
+          if(score2 === 2) {
+            setGame(false);
+            setFinalWinner(name2);
+          }
         }
       }
     })
@@ -80,6 +90,9 @@ function App() {
               <Square value={squares[8]} id="1" styleName={'smallTile9'} onClick={() => handleOnClick(8)}></Square>
             </div>
           </>
+        }
+        {finalWinner && 
+          <Winner finalWinner={finalWinner}></Winner>
         }
       </header>
     </div>

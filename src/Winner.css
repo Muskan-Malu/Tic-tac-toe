@@ -1,0 +1,74 @@
+.winTile {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: #c9d5e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
+    inset 15px 15px 10px rgba(255, 255, 255, 0.75 ), 
+    -15px -15px 35px rgba(255, 255, 255, 0.55),
+    inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.circle1 {
+    position: absolute;
+    inset: 35px;
+    background: #152b4a;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px #152b4a66,
+    inset 10px 10px 10px rgba(255, 255, 255, 0.5),
+    -4px -4px 12px rgba(255, 255, 255, 0.75);
+}
+
+.circle1::before {
+    content: "";
+    position: absolute;
+    inset: 35px;
+    background: linear-gradient(#2196f3, #e91e63);
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.circle2 {
+    position: absolute;
+    inset: 40px;
+    background: #152b4a;
+    border-radius: 50%;
+    color: white;
+}
+
+.largeText {
+    position: relative;
+    top: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px;
+}
+
+.mediumText {
+    position: relative;
+    top: 130px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+}
+
+.emoji {
+    position: relative;
+    top: 160px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+}
